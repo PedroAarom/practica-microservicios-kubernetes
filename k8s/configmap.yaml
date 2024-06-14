@@ -2,6 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: mysql-initdb-config
+  namespace: mysql
 data:
   create_table.sql: |
     CREATE TABLE IF NOT EXISTS form_data (
